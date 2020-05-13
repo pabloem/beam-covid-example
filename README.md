@@ -42,11 +42,14 @@ Some valuable utilities are:
     - `is_not_empty`
     - `equal_to`
     - `matches_all`
-    
+
+Check out the tests in `covidpipe/datasource_test.py`. These tests use the
+various utilities to write / run / verify unit tests with your Beam pipelines.
+
 ## Passing parameters to your PTransforms / Pipelines
 
 The [pipeline options](https://beam.apache.org/releases/pydoc/current/apache_beam.options.pipeline_options.html)
- abstraction is what Beam uses to pass parameters to a pipeline. 
+ abstraction is what Beam uses to pass parameters to a pipeline.
 
 For a complex pipeline, you should define a PipelineOptions class to hold your pipeline arguments. This is useful because the options you pass will be available at pipeline execution as well.
 
